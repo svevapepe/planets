@@ -6,7 +6,34 @@
 
 header {
   padding: 154px 0 100px;
+  
 }
+/*----------------------------------
+------Cards-----------------------*/
+.card-deck{
+	display: table;
+	max-width:1700px;
+	margin: 40px 350px;
+	margin-bottom: 60px;
+
+}
+.card{
+	width: 241px;
+	margin:2% 5%;
+	margin-left: 10%;
+	height: 700px;
+	background: #fff;
+	float: left;
+}
+.card-img-top{
+	width: 241px;
+	height: 401px;
+}
+.card-body p{
+	text-decoration: none;
+}
+
+/* About site*/
 .about{
 	background-image: url(https://raw.githubusercontent.com/svevapepe/progetto_ltw/master/planets-wallpapers-30837-3234531.jpg);
 	background-size: cover;
@@ -16,6 +43,7 @@ header {
 	position: relative;
 }
 
+
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
@@ -24,4 +52,25 @@ header {
 
 section {
   padding: 150px 0;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/* close commented backslash hack */
+
+*,
+*:before,
+*:after{
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+   		box-sizing:border-box; 
 }
