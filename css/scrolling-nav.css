@@ -12,16 +12,14 @@ header {
 ------Cards-----------------------*/
 .card-deck{
 	display: table;
-	max-width:1700px;
-	margin: 40px 350px;
+	width: 67%;
+	margin: 0 auto;
 	margin-bottom: 60px;
-
 }
 .card{
 	width: 241px;
 	margin:2% 5%;
-	margin-left: 10%;
-	height: 700px;
+	height: 401px;
 	background: #fff;
 	float: left;
 }
