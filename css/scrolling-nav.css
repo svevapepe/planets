@@ -4,7 +4,7 @@ body{
 	background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
+		font-weight: 300;
 }
 /*-------------------------------
 Nav-bar
@@ -39,6 +39,7 @@ Nav-bar
 	text-decoration:none;
 	color: #fff;
 	text-transform: uppercase;
+	text-align: center
 }
 /*-------------------------------
 Header
@@ -46,10 +47,10 @@ Header
 header{
 	font-size: 25px;
     font-weight: 100;
-    font-style: normal;
+		font-style: normal;
     text-transform: uppercase;
-    text-decoration: none;
-   	margin-left: 350px;
+		text-decoration: none;
+		text-align: center;
     letter-spacing: 2px;
     color: #fff;
 }
@@ -58,20 +59,20 @@ Cards
 -------------------------------*/
 .card-deck{
 	display: table;
-	width: 67%;
+	width: 98%;
 	margin: 0 auto;
-	margin-bottom: 60px;
+	margin-bottom: 200px;
 }
 .card{
-	width: 241px;
+	width: 171px;
 	margin:2% 5%;
-	height: 401px;
+	height: 361px;
 	background: #fff;
 	float: left;
 }
 .card-img-top{
-	width: 241px;
-	height: 401px;
+	width: 231px;
+	height: 361px;
 	border:2px solid white;
 }
 .card-body p{
