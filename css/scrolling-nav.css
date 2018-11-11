@@ -1,15 +1,61 @@
-/*!
- * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
- */
-
-header {
-  padding: 154px 0 100px;
-  
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+body{
+	background-image: url(https://images8.alphacoders.com/647/647675.jpg);
+	background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
 }
-/*----------------------------------
-------Cards-----------------------*/
+/*-------------------------------
+Nav-bar
+-------------------------------*/
+.main-nav{
+	background-color: none;
+}
+.main-home{
+	color: #fff;
+	float: left; 
+	display: block; 
+	padding: 25px; 
+	text-decoration:none;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.main-menu{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+.menu-item{
+	color: #fff;
+	display:inline-block; 
+	padding: 15px; 
+	text-decoration:none;
+	font-size: 20px;
+
+}
+.menu-item a{
+	display: inline-block;
+	text-decoration:none;
+	color: #fff;
+	text-transform: uppercase;
+}
+/*-------------------------------
+Header
+-------------------------------*/
+header{
+	font-size: 25px;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+   	margin-left: 350px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+/*-------------------------------
+Cards
+-------------------------------*/
 .card-deck{
 	display: table;
 	width: 67%;
@@ -26,6 +72,7 @@ header {
 .card-img-top{
 	width: 241px;
 	height: 401px;
+	border:2px solid white;
 }
 .card-body p{
 	text-decoration: none;
