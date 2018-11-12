@@ -15,12 +15,15 @@ Nav-bar
 .main-home{
 	color: #fff;
 	float: left; 
-	display: block; 
-	padding: 25px; 
+	display: inline-block; 
+	margin-left: 10px;
 	text-decoration:none;
 	font-size: 20px;
 	text-transform: uppercase;
 }
+
+
+
 .main-menu{
 	float: right;
 	margin: 0;
@@ -89,6 +92,7 @@ Footer
 	margin-top:9px;
 }
 
+//simone
 @media (max-width: 1620px) {
   header {
     padding: 156px 0 100px;
