@@ -32,7 +32,6 @@ Nav-bar
 	padding: 15px; 
 	text-decoration:none;
 	font-size: 20px;
-
 }
 .menu-item a{
 	display: inline-block;
@@ -93,6 +92,14 @@ Footer
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
+    font-size: 25px;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+   	margin-left: 400px;
+    letter-spacing: 2px;
+    color: #fff;
   }
   .card-deck{
   	display: table-cell;
@@ -104,7 +111,7 @@ Footer
 	height: 401px;
 	background: none;
 	float: left;
-	margin-left: 29.291px;	
+	margin-left: 28px;	
 }
 }
 
