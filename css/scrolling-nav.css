@@ -57,10 +57,10 @@ header{
 Cards
 -------------------------------*/
 .card-deck{
-	display: table;
+	display: table-cell;
 	width: 100%;
 	margin: 0 auto;
-	margin-left: 135px;
+
 	margin-bottom: 60px;
 }
 .card{
@@ -69,7 +69,7 @@ Cards
 	height: 401px;
 	background: none;
 	float: left;
-	
+	margin-left: 120px;	
 }
 .card-img-top{
 	width: 241px;
@@ -94,6 +94,18 @@ Footer
   header {
     padding: 156px 0 100px;
   }
+  .card-deck{
+  	display: table-cell;
+  	
+  }
+  .card{
+	width: 241px;
+	margin:2% 4%;
+	height: 401px;
+	background: none;
+	float: left;
+	margin-left: 30px;	
+}
 }
 
 section {
