@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 body{
-	background-image: url(https://images8.alphacoders.com/647/647675.jpg);
+	background-image: url(https://images.wallpaperscraft.com/image/starry_sky_stars_space_120412_1280x720.jpg);
 	background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -58,7 +58,7 @@ Cards
 -------------------------------*/
 .card-deck{
 	display: table;
-	width: 67%;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 60px;
 }
@@ -66,28 +66,28 @@ Cards
 	width: 241px;
 	margin:2% 5%;
 	height: 401px;
-	background: #fff;
+	background: none;
 	float: left;
+	
 }
 .card-img-top{
 	width: 241px;
 	height: 401px;
-	border:2px solid white;
+	border-radius: 7px;
+	border: 0.05px groove white;
 }
 .card-body p{
 	text-decoration: none;
 }
-
-/* About site*/
-.about{
-	background-image: url(https://raw.githubusercontent.com/svevapepe/progetto_ltw/master/planets-wallpapers-30837-3234531.jpg);
-	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size:cover;
-	background-position: center center;
-	position: relative;
+/*-------------------------------
+Footer
+-------------------------------*/
+.footer{
+	background: #000000;
+	padding: 5px;
+	color: #fff;
+	margin-top:10px;
 }
-
 
 @media (min-width: 992px) {
   header {
