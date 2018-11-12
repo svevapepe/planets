@@ -74,7 +74,7 @@ Cards
 	width: 241px;
 	height: 401px;
 	border-radius: 7px;
-	border: 0.05px groove white;
+	border: 0.5px groove white;
 }
 .card-body p{
 	text-decoration: none;
