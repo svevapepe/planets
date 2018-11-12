@@ -49,7 +49,7 @@ header{
     font-style: normal;
     text-transform: uppercase;
     text-decoration: none;
-   	margin-left: 350px;
+   	margin-left: 400px;
     letter-spacing: 2px;
     color: #fff;
 }
@@ -60,11 +60,12 @@ Cards
 	display: table;
 	width: 100%;
 	margin: 0 auto;
+	margin-left: 135px;
 	margin-bottom: 60px;
 }
 .card{
 	width: 241px;
-	margin:2% 5%;
+	margin:2% 4%;
 	height: 401px;
 	background: none;
 	float: left;
