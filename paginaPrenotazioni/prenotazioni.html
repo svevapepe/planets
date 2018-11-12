@@ -9,21 +9,51 @@
         <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
         <script type="text/javascript" lang="javascript" src="loginScript.js"></script>
     </head>
-    <body class="text-center">
+    <body class="text-center" background="ixs-enterprise_full.jpg">
         <form action="https://www.diag.uniroma1.it/~rosati/lw/" class="form-signin" method="POST" name="myForm" onSubmit="return validaForm()">
             <img class="mb-4" src="" alt="" width="128" height="72"/>
-            <h1 class="h3 mb-3 font-weight-normal">Prenota ora il tuo biglietto:</h1>
-            <input type="email" name="inputEmail" class="form-control" placeholder="Email address" required autofocus/>
-            <input type="password" name="inputPassword" class="form-control" placeholder="Password" required/>
-            <div id="divCap" class="text-center">
-                <label for="cap">Inserisci il CAP di provenienza:</label>
-                <input type="text" name="cap" size="5" maxlength="5" onChange="return controllaCAP()"/>
-            </div>
+            <input type="text" name="inputNome" class="form-control" placeholder="Nome" maxlength="20" required autofocus/>
+            <input type="text" name="inputCognome" class="form-control" placeholder="Cognome" maxlength="20" required autofocus/>
+            <input type="email" name="inputEmail" class="form-control" placeholder="Indirizzo email" maxlength="30" required autofocus/>
+            <input type="password" name="inputPassword" class="form-control" placeholder="Password" maxlength="20" required/>
+            <select class="custom-select" name="inputPartenza" required>
+                <option value="nessuno" disabled selected hidden>Aeroporto di partenza</option>
+                <option value="Mercurio">Mercurio</option>
+                <option value="Venere">Venere</option>
+                <option value="Terra">Terra</option>
+                <option value="Marte">Marte</option>
+                <option value="Saturno">Saturno</option>
+                <option value="Giove">Giove</option>
+                <option value="Urano">Urano</option>
+                <option value="Nettuno">Nettuno</option>
+            </select>
+            <select class="custom-select" name="inputArrivo" required>
+                <option value="nessuno" disabled selected hidden>Aeroporto di arrivo</option>
+                <option value="Mercurio">Mercurio</option>
+                <option value="Venere">Venere</option>
+                <option value="Terra">Terra</option>
+                <option value="Marte">Marte</option>
+                <option value="Saturno">Saturno</option>
+                <option value="Giove">Giove</option>
+                <option value="Urano">Urano</option>
+                <option value="Nettuno">Nettuno</option>
+            </select>
+            -
+            <input type="datetime" name="inputDataPartenza" class="form-control" placeholder="Data di partenza" required/>
+            <select class="custom-select" name="inputNavicella" required>
+                <option value="nessuno" disabled selected hidden>Tipo di navicella</option>
+                <option value="Smart">Smart</option>
+                <option value="Comfort">Comfort</option>
+                <option value="Business">Business</option>
+                <option value="Exclusive">Exclusive</option>
+            </select>
+
             <div id="divRemember" class="checkbox mb-3">
                 <input type="checkbox" name="remember"/>
-                <label for="remember">Remember me</label>
+                <label for="remember">Desidero ricevere promozioni via mail</label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            
+            <button class="btn btn-lg btn-outline-dark btn-block" type="submit">Aquista ora</button>
         </form>
     </body>
 </html>
