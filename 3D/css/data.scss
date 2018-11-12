@@ -196,7 +196,7 @@ $d-neptune:             4498396441;
 
 /* --------------------------------------------------------------------------- speed */
 
-.set-speed dl.infos dd span:after     { content: 'Orbit Velocity'; }
+.set-speed dl.infos dd span:after     { content: 'Velocità orbitale'; }
 
 .set-speed #sun dl.infos dd:after     { content: '0 km/h'; }
 .set-speed #mercury dl.infos dd:after { content: '170,503 km/h'; }
