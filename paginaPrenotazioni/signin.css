@@ -59,16 +59,30 @@ Header
     letter-spacing: 2px;
     color: #fff;
 
+<<<<<<< HEAD
   }
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> a2845973b835eca053f59cb528e764fe4db4c21a
 /*-------------------------------
 Form
 ------------------------------*/
+>>>>>>> dbb9fc0b47d99c01554fdd5ab1976557b4fdc0e4
 .form-signin {
   width: 100%;
+<<<<<<< HEAD
   max-width: 330px;
   padding: 10px;
   margin-left: 750px;
   margin-top:50px;
+=======
+  max-width: 530px;
+  padding: 15px;
+  margin-left: 850px;
+  margin-top: 150px;
+>>>>>>> a2845973b835eca053f59cb528e764fe4db4c21a
 }
 .form-signin .checkbox {
   font-weight: 400;
