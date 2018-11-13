@@ -12,6 +12,8 @@
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     </head>
     <body>
@@ -27,7 +29,7 @@
             <li class="menu-item"><a class="menu-link" href="#">Contatti</a></li>
           </ul>
         </nav>
-        <header class="menu">
+        <header class="menu warning">
             <h1>Acquista il tuo biglietto</h1>
         </header>
         <form action="https://www.diag.uniroma1.it/~rosati/lw/" class="form-signin" align="center"method="POST" name="myForm" onSubmit="return validaForm()">
@@ -58,13 +60,13 @@
             </div>
             <div class="input-group mb-1">
                     <div class="input-group-prepend">
-                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm">Numero di biglietti</span>
+                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm"><i class="fa fa-ticket"></i>&nbsp;N° di biglietti</span>
                     </div>
                     <input type="text" class="form-control form-control btn-outline-light text-dark font-weight-bold" maxlength="2" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required autofocus>
             </div>
             <div class="input-group mb-4">
                     <div class="input-group-prepend">
-                      <span class="input-group-text text-dark font-weight-bold" id="">Data partenza e arrivo</span>
+                      <span class="input-group-text text-dark font-weight-bold" id=""><i class='far fa-calendar-alt'></i>&nbsp;Data partenza e arrivo</span>
                     </div>
                     <input type="date" class="form-control btn-outline-light text-dark font-weight-bold" required>
                     <input type="date" class="form-control btn-outline-light text-dark font-weight-bold">
