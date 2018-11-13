@@ -104,8 +104,18 @@ Form
 .checkbox {
   color: white;
 }
-
-
+/*-------------------------------
+Footer
+------------------------------*/
+.footer{
+  margin-top:40px;
+  background: #000000;
+  padding: 0.5px;
+  color: #fff; 
+}
+.testo{
+  margin-top: 10px;
+}
 .clearfix:after {
   visibility: hidden;
   display: block;
