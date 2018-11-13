@@ -8,6 +8,10 @@
         <link href="signin.css" rel="stylesheet"/>
         <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
         <script type="text/javascript" lang="javascript" src="loginScript.js"></script>
+
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
     </head>
     <body>
@@ -27,40 +31,34 @@
             <h1>Acquista il tuo biglietto</h1>
         </header>
         <form action="https://www.diag.uniroma1.it/~rosati/lw/" class="form-signin" method="POST" name="myForm" onSubmit="return validaForm()">
-            <img class="mb-4" src="" alt="" width="128" height="72"/>
-            <div class="input-group mb-3">
+            
+            <div class="input-group mb-1">
                     <div class="input-group-prepend">
-                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm">Nome</span>
+                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm"><i class="material-icons">person</i>&nbsp;Nome</span>
                     </div>
                     <input type="text" class="form-control form-control btn-outline-light text-dark font-weight-bold" maxlength="20" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required auto>
             </div>
-            <div class="input-group mb-3">
+            <div class="input-group mb-4">
                     <div class="input-group-prepend">
-                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm">Cognome</span>
+                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm"><i class="material-icons">person</i>&nbsp;Cognome</span>
                     </div>
                     <input type="text" class="form-control form-control btn-outline-light text-dark font-weight-bold" maxlength="20" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required autofocus>
             </div>
-            <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm">Email</span>
-                    </div>
-                    <input type="text" class="form-control form-control btn-outline-light text-dark font-weight-bold" maxlength="20" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required autofocus>
-            </div>
-            <div class="input-group mb-3">
+            <div class="input-group mb-1">
                     <div class="input-group-prepend">
                       <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm">Numero di biglietti</span>
                     </div>
                     <input type="text" class="form-control form-control btn-outline-light text-dark font-weight-bold" maxlength="2" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required autofocus>
             </div>
-            <div class="input-group">
+            <div class="input-group mb-4">
                     <div class="input-group-prepend">
                       <span class="input-group-text text-dark font-weight-bold" id="">Data partenza e arrivo</span>
                     </div>
                     <input type="date" class="form-control btn-outline-light text-dark font-weight-bold" required>
                     <input type="date" class="form-control btn-outline-light text-dark font-weight-bold">
             </div>
-            -
-            <select class="custom-select btn-outline-light text-secondary" name="inputPartenza" required>
+            
+            <select class="custom-select btn-outline-light text-secondary mb-1" name="inputPartenza" required>
                 <option value="nessuno" disabled selected hidden>Spazioporto di partenza</option>
                 <option value="Mercurio">Mercurio</option>
                 <option value="Venere">Venere</option>
@@ -71,7 +69,7 @@
                 <option value="Urano">Urano</option>
                 <option value="Nettuno">Nettuno</option>
             </select>
-            <select class="custom-select btn-outline-light text-secondary" name="inputArrivo" required>
+            <select class="custom-select btn-outline-light text-secondary mb-3" name="inputArrivo" required>
                 <option value="nessuno" disabled selected hidden>Spazioporto di arrivo</option>
                 <option value="Mercurio">Mercurio</option>
                 <option value="Venere">Venere</option>
@@ -82,21 +80,36 @@
                 <option value="Urano">Urano</option>
                 <option value="Nettuno">Nettuno</option>
             </select>
-            -
-            <select class="custom-select" name="inputNavicella" required>
+            
+            <select class="custom-select mb-3" name="inputNavicella" required>
                 <option value="nessuno" disabled selected hidden>Tipo di navicella</option>
                 <option value="Smart">Smart</option>
                 <option value="Comfort">Comfort</option>
                 <option value="Business">Business</option>
                 <option value="Exclusive">Exclusive</option>
             </select>
-            -
+
+            <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm"><i class='fas fa-at'></i></span>
+                    </div>
+                    <input type="text" class="form-control form-control btn-outline-light text-dark font-weight-bold" maxlength="20" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required autofocus>
+            </div>
+            <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text text-dark font-weight-bold" id="inputGroup-sizing-sm"><i class='fas fa-key'></i></span>
+                    </div>
+                    <input type="text" class="form-control form-control btn-outline-light text-dark font-weight-bold" maxlength="20" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required autofocus>
+            </div>
+            
             <div id="divRemember" class="checkbox mb-3">
                 <input type="checkbox" name="remember"/>
                 <label for="remember">Desidero ricevere promozioni via mail</label>
             </div>
             
-            <button class="btn btn-lg btn-outline-warning btn-block" type="submit">Aquista ora</button>
+            <button class="btn btn-lg btn-outline-warning btn-block" type="submit">Aquista ora &nbsp; <i class='fas fa-rocket'></i></button>
         </form>
     </body>
 </html>-->
+
+   
